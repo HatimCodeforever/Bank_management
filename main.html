@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>main</title>
+        <link rel="stylesheet" href="main.css">  
+        <script src="main.js"></script>
+    </head>
+    <body onload="showSlides(1)">
+        <header>
+            <a  class="logo">
+                <img src="star2.jpeg">
+            </a>
+            <div class="rightSide">
+                <ul class="navigation">
+                    <li class="dropdown"><a href="http://localhost:/feedback.php">FEEDBACK</a>
+                    </li>
+                    <li class="dropdown"><a href="javascrip:void(0)">NETBANKING</a>
+                        <ul>
+                            <li class="dropdownItem"><a href="http://localhost:/add_ben.php">ADD BENEFICIARY</a></li>
+                            <li class="dropdownItem"><a href="http://localhost:/fund_transfer.php">FUND TRANSFER</a></li>
+                            <li class="dropdownItem"><a href="http://localhost:/statement.php">STATEMENT</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="http://localhost:/loan1.php" onclick='window.close()' target="_blank">LOANS</a></li>
+                    <li class="dropdown"><a href="http://localhost:/EMICALC.php">EMI CALCULATOR</a></li>
+                    <li class="dropdown"><a href="http://localhost:/profile.php" onclick='window.close()' target="_blank" id="user">
+                        <ion-icon name="person-outline"></ion-icon>
+                        </a>
+                        <ul>
+                            <li class="dropdownitem">
+                                <a href="main2.html" onclick="return logout()">
+                                    <ion-icon name="log-out-outline"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- SLIDE SHOW  -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="pp1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="pp2.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="pp3.jpg" style="width:100%">
+            </div>
+        </div>
+        
+        <!-- WAYS TO BANK -->
+       <div class="bank">
+           <h2>Ways to Bank</h2>
+           <div class="bank-container">
+                <div class="bank-div">
+                    <a href="javascript:void(0)">
+                        <img src="digital-accounts.svg">
+                        <p>Digital Accounts</p>
+                    </a>
+                </div>
+                <div class="bank-div">
+                    <a href="javascript:void(0)">
+                        <img src="digital-loans.svg">
+                        <p>Digital Loans</p>
+                    </a>
+                </div>
+                <div class="bank-div">
+                    <a href="javascript:void(0)">
+                        <img src="mobile-banking.svg">
+                        <p>Mobile Banking</p>
+                    </a>
+                </div>
+                <div class="bank-div">
+                    <a href="javascript:void(0)">
+                        <img src="internet-banking.svg">
+                        <p>Internet Banking</p>
+                    </a>
+                </div>
+           </div>
+       </div>
+       <!-- FOOTER   -->
+       <footer>
+           <div class="nav-links">
+               <div class="row">
+                       <div class="col-sm-2">
+                           <div class="link-list">
+                                <h6>Home</h6>
+                                <ul>
+                                    <li><a href="#">Forex Card Rates</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Interest Rates</a></li>
+                                    <li><a href="#">Download Forms</a></li>
+                                    <li><a href="#">Corporate Social</a></li>
+                                    <li><a href="#">Responsibility</a></li>
+                                    <li><a href="#">Sustainability and Business</a></li>
+                                    <li><a href="#">Responsibility Policy</a></li>
+                                    <li><a href="#">Bank Calendar</a></li>
+                                    <li><a href="#">RTI 2005</a></li>
+                                    <li><a href="#">Grahak Setu</a></li>
+                                </ul>
+                           </div>
+                        </div>
+                       <div class="col-sm-2">
+                           <div class="link-list">
+                                <h6>NRI</h6>
+                                <ul>
+                                    <li><a href="#">Accounts</a></li>
+                                    <li><a href="#">Investements</a></li>
+                                    <li><a href="#">Loans</a></li>
+                                    <li><a href="#">Remittances</a></li>
+                                    <li><a href="#">Information</a></li>
+                                </ul>
+                           </div>
+                        </div>
+                       <div class="col-sm-2">
+                           <div class="link-list">
+                                <h6>Personal</h6>
+                                <ul>
+                                    <li><a href="#">Savings Account</a></li>
+                                    <li><a href="#">Loans</a></li>
+                                    <li><a href="#">Investments and Deposits</a></li>
+                                    <li><a href="#">Cards</a></li>
+                                    <li><a href="#">Digital</a></li>
+                                    <li><a href="#">Information and Services</a></li>
+                                </ul>
+                           </div>
+                        </div>
+                       <div class="col-sm-2">
+                           <div class="link-list">
+                                <h6>International Banking</h6>
+                                <ul>
+                                    <li><a href="#">Banking</a></li>
+                                    <li><a href="#">Credit Finance</a></li>
+                                    <li><a href="#">Services</a></li>
+                                </ul>
+                           </div>
+                        </div>
+                       <div class="col-sm-2">
+                           <div class="link-list">
+                                <h6>Business</h6>
+                                <ul>
+                                    <li><a href="#">CAG & CMG</a></li>
+                                    <li><a href="#">Current Account</a></li>
+                                    <li><a href="#">SME-Deposits</a></li>
+                                    <li><a href="#">SME-Loans</a></li>
+                                    <li><a href="#">Information</a></li>
+                                </ul>
+                           </div>
+                        </div>
+                       <div class="col-sm-2">
+                           <div class="link-list">
+                                <h6>Wealth Management</h6>
+                                <ul>
+                                    <li><a href="#">Star Wealth</a></li>
+                                    <li><a href="#">Products</a></li>
+                                </ul>
+                           </div>
+                        </div>
+               </div>
+           </div>
+           <div class="last">
+                <div class="copyright">
+                © Copyright <strong><span>Star Bank</span></strong>. All Rights Reserved.
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li><a href="https://instagram.com/mzaidsa?utm_medium=copy_link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="mailto:mzaidsa@yahoo.co.in"><ion-icon name="mail-outline"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="location-outline"></ion-icon></a></li>
+                    </ul>
+                </div>
+           </div>
+       </footer>
+        
+
+        <p id="p"></p>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+        </script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+    function logout()
+    {
+        if (confirm('Are you sure you want to Logout')) {
+        alert("Logged Out Succesfully :)")
+        } 
+        else {
+        return false;
+        }
+        $.ajax({
+                url:"log.php",
+                method: "POST",
+                data:{
+                    name : sel
+                },
+                success:function(data){
+                   
+                }
+
+            })
+
+    }
+        </script>
+    </body>
+</html>

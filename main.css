@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --color1: #f4b379;
+    --color2: #53828c;
+    --color3: #f7dac2;
+    --color4: #04545c;
+}
+body {
+    background-color: var(--color3);    
+}
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    width: 100vw;
+    padding: 1.5% 2.5%;
+    z-index: 100;
+    box-shadow: 0px 2px 15px rgb(128, 128, 128);
+}
+header .logo img {
+    height: 50px;
+    width: 200px;
+}
+@media (max-width: 768px){
+    header {
+        padding: 12px 6px;
+    }
+    header .logo img{
+        height: 25px;
+        width: 100px;
+    }
+}
+header .rightSide {
+    position: relative;
+    display: flex;
+}
+
+.rightSide .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.rightSide ul li {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 2px 4px;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.rightSide ul li:hover {
+    background-color: rgb(231, 231, 231);
+}
+.rightSide ul li a {
+    color: black;
+    text-decoration: none;
+}
+.rightSide ul li a ion-icon {
+    font-size: 2em;
+}
+.rightSide .navigation .dropdown {
+    cursor: pointer;
+}
+.rightSide .navigation .dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 4px 4px 15px rgb(128, 128, 128);
+    overflow: hidden;
+}
+.show {
+    display: block;
+    background-color: #53828c;
+}
+.rightSide .navigation .dropdown .dropdownitem{
+    display: block;
+    position: relative;
+    padding: 5px 0;
+}
+.rightSide .navigation .dropdown .dropdownitem {   
+    border-radius: 0;
+}
+.rightSide .navigation .dropdown .dropdownitem:hover { 
+    background-color: rgb(231, 231, 231);
+}
+.rightSide .navigation .dropdown .dropdownitem a{
+    display: block;
+    position: relative;
+    padding: 10px 10px;
+}
+.rightSide .navigation .dropdown:hover ul{
+    display: block;
+}
+@media (max-width: 768px) {
+    .rightSide .navigation {
+        font-size: 12px;
+        gap: 10px;
+    }
+    .rightSide ul li a ion-icon {
+        font-size: 1.5em;
+    }
+}
+
+/*SLIDESHOW*/
+.slideshow-container {
+  max-width: 100vw;
+  min-height: 100px;        
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img {
+    min-height: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/*WAYS TO BANK*/
+
+.bank {
+    margin: 30px;
+}
+.bank h2{
+    position: relative;
+    padding-left: 30px;
+    color: var(--color2);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.bank .bank-container {
+    display: grid;
+    background-color: white;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40% 40%;
+    box-sizing: border-box;
+    width: auto;
+    height: 70vh;
+    margin: 20px;
+    box-shadow: 4px 4px 15px rgb(128, 128, 128);
+    transition: box-shadow 0.5s;
+    border-radius: 8px;
+}
+.bank .bank-container .bank-div {
+    margin: 50px 25px;
+    height: 80%;
+    box-shadow: inset 0px 0px 20px rgb(192, 192, 192);
+    transition: 0.25s;
+    border-radius: 8px;
+}
+.bank .bank-container .bank-div:hover {
+    box-shadow: 4px 4px 15px rgb(192, 192, 192);
+    transform: scale(1.05);
+}
+.bank .bank-container .bank-div a{
+    text-decoration: none;
+}
+.bank .bank-container .bank-div img{
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 100px;   
+    width: 100px;   
+    float: left;
+}
+.bank .bank-container .bank-div p{
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    padding: 15px 10px;
+    font-weight: bold;
+    color: var(--color2);
+}
+@media (max-width: 768px) {
+    .bank {
+        margin: 15px;
+    }
+    .bank h2{
+        font-size: 1.5rem;
+    }   
+    .bank .bank-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        height: 100%;
+    }
+    .bank .bank-container .bank-div {
+        margin: 25px 15px;
+        height: 60%;
+    }
+    .bank .bank-container .bank-div img{
+        margin-top: 7px;
+        margin-left: 5px;
+        height: 30px;   
+        width: 30px;   
+    }
+    .bank .bank-container .bank-div p{
+        font-size: 16px;
+        padding-left: 40px;
+    }
+}
+
+/*FOOTER*/
+footer {
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+}
+footer .nav-links {
+    box-sizing: border-box;
+    padding: 50px 15px;
+    background-color: var(--color2);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.row.column-spitter {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.row .col-sm-2 {
+    flex: 0 0 16.666666%;
+    max-width: 16.666666%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+footer .nav-links h6 {
+    margin-top: 2vh;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--color1);
+    font-weight: bold;
+}
+footer .nav-links ul {
+    list-style: none;
+}
+footer .nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer .nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer .nav-links ul li a:hover {
+    text-decoration: underline;
+}
+footer .last {
+    background-color: var(--color4);
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+footer .last .copyright {
+    color: var(--color1);
+    padding: 10px 15px;
+}
+footer .last .contact {
+    position: fixed;
+    background-color: var(--color4);
+    bottom: 0;
+    right: 0;
+    border-radius: 8px;
+    height: inherit;
+}
+footer .last .contact ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-align: center;
+    margin: 5px 10px;
+}
+footer .last .contact a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color1);
+}
+footer .last .contact a ion-icon {
+    transition: 0.5s;
+}
+footer .last .contact:hover a ion-icon{
+    opacity: .5;
+}
+footer .last .contact a ion-icon:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+@media(max-width: 768px) {
+    footer .nav-links {
+        display: none;
+    }
+    footer .copyright {
+        font-size: 10px;
+    }
+    footer .last {
+        height: 30px;
+    }
+    footer .last .contact a {
+        font-size: 1rem;
+    }
+}

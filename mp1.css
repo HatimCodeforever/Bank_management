@@ -1,0 +1,149 @@
+#myInput {
+    background-image: url('E:\HABBAN\diploma\5th sem\CSS\micro-project\codes\search.jpg');
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 30%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    float: right;
+}
+
+#myTable {
+    margin-top: 40px;
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 100%;
+    /* Full-width */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    font-size: 18px;
+    /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+    text-align: left;
+    /* Left-align text */
+    padding: 12px;
+    /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #eff6f6;
+}
+
+
+/*dropdown CSS*/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #eff6f6;
+    color: #0c4d57;
+    padding: 16px;
+    font-size: 16px;
+    border: solid;
+    border-color: #0c4d57;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eff6f6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content button:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #0c4d57; color: white;}
+
+  .am_sort{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+ .s_amount:hover .am_sort {
+    display: block;
+    position: absolute;
+    left: 160px;
+    top: 0px;
+}
+.dat_sort{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.s_date:hover .dat_sort {
+    display: block;
+    position: absolute;
+    left: 160px;
+    top: 39px;
+}
+.type_sort{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.s_type:hover .type_sort {
+    display: block;
+    position: absolute;
+    left: 160px;
+    top: 78px;
+}
+.topchange
+{
+  margin-top: 30px;
+}
+.rotate
+{
+  width: 100%;
+  margin-top: 10px;
+}
